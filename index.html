@@ -432,7 +432,7 @@
         </section>
 
 
-        <!-- <section class="section scroll-reveal">
+        <section class="section scroll-reveal">
             <div style="text-align: center; padding: 40px 20px;">
                 <h2
                     style="font-family: 'Dancing Script', cursive; font-size: 32px; color: #c41e3a; margin-bottom: 30px;">
@@ -448,7 +448,7 @@
 
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Footer -->
         <footer class="footer">
@@ -486,27 +486,27 @@
 
     <!-- Gift Popups -->
     <!-- Popup Chú Rể -->
-    <!-- <div class="gift-popup" id="groomGiftPopup">
+    <div class="gift-popup" id="groomGiftPopup">
         <div class="gift-content">
             <div class="gift-close" onclick="closeGroomGift()">×</div>
             <h3 style="font-family: 'Dancing Script', cursive; font-size: 28px; color: #c41e3a; margin-bottom: 20px;">
-                Gửi Mừng Cưới Chú Rể</h3>
+                Gửi Mừng Cưới Cô Dâu</h3>
             <div class="bank-card">
                 <div style="margin-bottom: 20px; text-align: center;">
-                    <img src="images/qrtrai.png" alt="QR Code Chú Rể"
+                    <img src="images/qrgai.png" alt="QR Code Cô Dâu"
                         style="width: 250px; height: 250px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
                 </div>
                 <p style="font-size: 14px; color: #000000;">Ngân hàng</p>
-                <p style="font-size: 18px; color: #000000;">MBBank</p>
+                <p style="font-size: 18px; color: #000000;">OCB</p>
                 <p class="account-number" id="groomAccount" style="color: #000000; font-weight: 700; font-size: 24px;">
-                    77419111998</p>
-                <p style="font-size: 18px; color: #000000;">NGUYỄN THẾ THÀNH</p>
+                    0220107711117979</p>
+                <p style="font-size: 18px; color: #000000;">NGUYỄN THỊ BÍCH NGA</p>
                 <button onclick="copyGroomAccount()"
                     style="background: transparent; color: #000000; padding: 10px 30px; border: 2px solid #000000; border-radius: 25px; font-family: 'Dancing Script', cursive; font-size: 16px; cursor: pointer; margin-top: 15px; font-weight: 600;">📋
                     Sao chép STK</button>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <script>
@@ -668,7 +668,7 @@
         }
 
         function copyGroomAccount() {
-            const account = '77419111998'; // Thay số tài khoản thật của chú rể
+            const account = '0220107711117979'; // Thay số tài khoản thật của chú rể
             navigator.clipboard.writeText(account).then(() => {
                 alert('✅ Đã sao chép số tài khoản chú rể: ' + account);
             }).catch(() => {
@@ -678,7 +678,7 @@
 
         // Gift Popup - Cô Dâu
         function openBrideGift() {
-            document.getElementById('brideGiftPopup').classList.add('active');
+            document.getElementById('groomGiftPopup').classList.add('active');
         }
 
         function closeBrideGift() {
